@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Backit - LSP Package Manager</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      background: radial-gradient(circle at center, #0d6efd 0%, #6610f2 100%);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .command-box {
+      background-color: #1e1e1e;
+      color: #0f0;
+      padding: 1rem;
+      border-radius: 8px;
+      font-family: monospace;
+    }
+    footer {
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">backit</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Docs</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-outline-primary ms-2" href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4">Manage LSPs the Right Way.</h1>
+      <p class="lead mt-3">Backit is a modern package manager built exclusively for Language Servers.</p>
+      <a href="#" class="btn btn-light btn-lg mt-4">Install via CLI</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Why Backit?</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="bi bi-plug fs-1 text-primary mb-2"></i>
+          <h5>Plug-and-Play</h5>
+          <p>Install LSPs with a single command. No configs. No hassle.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-code-slash fs-1 text-primary mb-2"></i>
+          <h5>Language Agnostic</h5>
+          <p>Supports LSPs for JavaScript, Python, Rust, Go, and more.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-lightning fs-1 text-primary mb-2"></i>
+          <h5>Fast & Minimal</h5>
+          <p>Built to be fast, simple, and extendable. Nothing more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supported LSPs -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Supported LSPs</h2>
+      <div class="row text-center">
+        <div class="col-md-2 col-6 mb-3">💡 Pyright</div>
+        <div class="col-md-2 col-6 mb-3">⚙️ rust-analyzer</div>
+        <div class="col-md-2 col-6 mb-3">🌐 tsserver</div>
+        <div class="col-md-2 col-6 mb-3">🚀 gopls</div>
+        <div class="col-md-2 col-6 mb-3">📦 bash-language-server</div>
+        <div class="col-md-2 col-6 mb-3">🔧 lua-language-server</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Command Demo -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">CLI Preview</h2>
+      <div class="command-box mx-auto" style="max-width: 600px;">
+        <pre><code>$ backit init
+$ backit install pyright
+$ backit install rust-analyzer
+$ backit list
+$ backit switch pyright@1.1.300
+$ backit update</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-0">© 2025 Backit. Built for Language Server nerds. 🧠</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
